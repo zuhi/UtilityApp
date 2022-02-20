@@ -2,7 +2,7 @@ let readLineSync = require('readline-sync');
 const crypto = require('crypto');
 
 
-const print = (element) => console.log(element);
+const print = (printValue) => console.log(printValue);
 
 switch(readLineSync.question("Choose which utility you want to use:\n1) URL Encoder\n2) URL Decoder\n3) Base64 Encoding\n4) Base64 Decoding\n5) String Hashing\n6) Epoch Convertor\n7) Binary/Decimal/Hex/Octal Convertors\n8) RGB Convertor\n9) Unit Convertor\n")){
   case "1": const URL = readLineSync.question("Enter the url to be encoded: ");
